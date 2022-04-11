@@ -3,7 +3,7 @@ body {
     font-family: Outfit;
     font-weight: 400;
     color: hsl(220, 15%, 55%);
-    font-size: 1.066rem;
+    font-size: 15px;
     background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
@@ -20,12 +20,24 @@ body {
     background-color: hsl(0, 0%, 100%);
     text-align: center;
 }
+h1, p {
+    padding: 0 .3em;
+}
 h1 {
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 .qr-image {
     border-radius: 3%;
     max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 446px){
+    h1 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: .65rem;
+    }
 }
